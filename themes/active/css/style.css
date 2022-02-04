@@ -27,16 +27,29 @@ img {
     max-width: 100%;
     height: auto;
 }
-figure{
+figure {
   border: 1px solid #444;
   margin: 1rem;
   padding: 1rem;
+  position: relative;
+}
+figcaption{
+  margin: 0.75rem 0 0 0;
+  position: absolute;
+  bottom: 0.125rem;
+  left: 0.125rem;
 }
 
 
 /* --------------------------------------
    DEFAULT STYLES GO HERE
 ----------------------------------------- */   
+
+
+
+
+
+
 
 
 /* --------------------------------------
@@ -49,7 +62,13 @@ figure{
    and: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 */
 
+@media only screen and (min-width: 466px){
 
+  figure {
+    width: 434px;
+    margin: 1rem auto 2rem auto;
+}
+}
 
 @media only screen and (min-width: 576px) { 
        
@@ -71,12 +90,31 @@ figure{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+  main{
+    display: grid;
+    padding: 0;
+    grid-template-columns: 434px 434px;
+    grid-column-gap:1rem;
+    border: 1px solid red;
+    width: 886px;
+    margin:1rem auto;
+  }
+
   }
 
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+  
+@media only screen and (min-width: 1368px) {
+
+  main.thumbs{
+    grid-template-columns: 434px 434px 434px;
+    grid-column-gap:1rem;
+    width: 1336px;
+  }
+}
   }
 
 
