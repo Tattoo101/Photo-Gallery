@@ -24,7 +24,10 @@ h1{
 
 }
 
-
+body {
+ background-image: url(../img/marble.jpg); 
+ background-color: #444;
+}
 
 /* --------------------------------------
   RESPONSIVE IMAGES
@@ -34,20 +37,30 @@ img {
     max-width: 100%;
     height: auto;
     margin-bottom: 2em;
+    
+   
+
 }
 figure {
   border:1px solid #444;
   margin: 1rem;
   padding: 1rem;
   position: relative;
+  background-color: 	#000000 ;
+  font-family: 'Quintessential';
 }
 figcaption{
   margin: 0.75rem 0 0 0;
   position: absolute;
   bottom: 0.5rem;
   left: 0.5rem;
+  color: 	 #CCCCCC	;
+  
 }
-
+hover img{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
 
 /* --------------------------------------
    DEFAULT STYLES GO HERE
