@@ -1,13 +1,4 @@
-<?php
-// a php file can contain plain old simple HTML
-// This makes it easy to "include" one piece of HTML many times in the web site without having to code it many times
-// Example: one include in the footer of a 5000 page web site. Update the copyright + year only once instead of 5000 times.
-?>
-<ul class="navigation">
-    <li class="home"> 
-    <img scr="img/logo6.svg"/>
-    <a href="/index.php">
-
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" viewBox="0 0 109.07 103.75" overflow="visible" xml:space="preserve">
@@ -66,7 +57,7 @@
 		c0.61-0.58,1.47-1.06,2.29-1.22c1.99-0.37,4.02-0.53,6.39-0.81C93.34,83.18,86.73,89.76,77.85,94.59z"/>
 	<path fill="#AF7EFF" d="M20.36,84.94c3.52,0.04,6.84,0.63,10.01,2.16c3.38,1.63,6.85,3.07,10.3,4.54c1.99,0.85,3.67,2.05,4.99,3.79
 		c1.02,1.36,2.13,2.66,3.41,4.24C37.5,98.16,28.09,93.19,20.36,84.94z"/>
-	<path fill="#AF7EFF" d="M63.6,4.15c-0.18,0.25-0.23,0.37-0.31,0.41C58.28,7.37,53.07,9.61,47.3,10.3
+	<path fill="#AF7EFF" d="M63.6,4.15c-0.18,0.25-0.23,0.37-0.31,0.41c-5.01,2.81-10.22,5.05-15.99,5.74
 		c-1.07,0.13-2.16,0.26-3.17,0.58c-3.47,1.1-6.76,0.69-9.95-0.96c-0.46-0.24-0.94-0.41-1.67-0.73C42.4,3.96,52.62,2.33,63.6,4.15z"
 		/>
 	<path fill="#AF7EFF" d="M88.3,16.68c6.51,4.26,15.36,21.5,14.75,28.75c-2.94-2.67-6.45-4.53-7.96-8.48
@@ -75,12 +66,3 @@
 		c-0.28,1.61-0.6,3.22-0.93,4.82c-0.63,3-1.03,6.09-2.02,8.97c-1.03,3.02-2.64,5.85-3.99,8.76C7.95,59.97,7.81,59.92,7.67,59.87z"/>
 </g>
 </svg>
-
-   
-    </a></li>
-    <?php 
-    // note that the paths start with a /
-    // this makes the path root-relative, meaning the path is defined starting from the root folder level
-    // root-relative paths won't break even if the file is included in files in subfolders
-    ?>
-</ul>
