@@ -27,6 +27,7 @@ h1{
 
 body { 
  background-color: #D1D1D0;
+
 }
 
 /* --------------------------------------
@@ -36,21 +37,22 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 2em;
-    filter: blur(1.5px) grayscale(50%);
-    transition: filter 0.5s;}
+    padding: 1em;
+    
+    }
   
-img:hover{
+.thumbs img:hover{
       filter: none;}   
    
-
+.thumbs img{
+    filter: blur(1.5px) grayscale(70%);
+    transition: filter 0.5s;
+}
 
 figure {
   border:1px solid #444;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1rem auto;
   position: relative;
-  margin-right: 10px;
   background-color: 	#D2E5D0;
   font-family: 'Quintessential';
   font-size: 30px;
@@ -66,23 +68,30 @@ figcaption{
 
   
 }
-.home a {
-
-  width: 6rem;
+.home img{
+width: 100px;
   
-  height: 6rem;
+height: 100px;
   
   display: block;
   
   margin: 1em auto;
   
-  }
+
+
+}
+
+
+  
+
+
+
+
 
 /* --------------------------------------
    DEFAULT STYLES GO HERE
 ----------------------------------------- */   
 
-/* not thumbs is not big any more idk why ask teacher tomorrow */
 
 
 
@@ -121,14 +130,20 @@ h1{
 }
 /* 2 x 466px + 16px gap + 2 x 16px outer margins */
 @media only screen and (min-width: 918px) {
-  main{
+  main.thumbs{
     display: grid;
     padding: 0;
     grid-template-columns: 434px 434px;
     grid-column-gap:1rem;
     width: 886px;
     margin:1rem auto;
+  
   }
+.hightrais figure{
+  width:900px;
+
+
+}
 
 
   
@@ -146,7 +161,14 @@ h1{
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-  
+} 
+@media (min-width:1266px){
+  main.hightrais figure{
+    width: 1200px;
+    padding: 1rem;
+    border:1px solid black;
+  }
+}
 @media only screen and (min-width: 1368px) {
 
   main.thumbs{
@@ -155,7 +177,7 @@ h1{
     width: 1336px;
   }
 }
-  }
+  
 
 
 /* XX-Large devices (larger desktops, 1400px and up) */
